@@ -1,0 +1,32 @@
+{
+  "name": "postgres-sync",
+  "version": "1.0.0",
+  "description": "Synchronize data between two PostgreSQL databases",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.ts",
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "cron": "^3.3.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "node-cron": "^3.0.3",
+    "pg": "^8.11.3",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/cron": "^2.4.3",
+    "@types/dotenv": "^8.2.3",
+    "@types/express": "^4.17.0",
+    "@types/node": "^16.0.0",
+    "@types/node-cron": "^3.0.11",
+    "@types/pg": "^8.0.0",
+    "@types/winston": "^2.4.4",
+    "ts-node": "^10.0.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.5.0"
+  }
+}
